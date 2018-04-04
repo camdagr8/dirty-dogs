@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm install && gulp --environment production",
-    "local": "npm install && gulp --environment development"
+    "local": "npm install && gulp --environment development",
+    "prestart": "npm install && gulp --environment production",
+    "start": "node ./index.js"
   },
   "keywords": [
     "react",

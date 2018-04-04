@@ -10,6 +10,7 @@ const app        = express();
 
 let port    = config.port.proxy;
 port        = (process.env.hasOwnProperty('APP_PORT')) ? process.env.APP_PORT : port;
+port        = (process.env.hasOwnProperty('PORT')) ? process.env.PORT : port;
 
 
 // Use basic auth if .htpasswd file is present
