@@ -14,14 +14,19 @@ $button-text: (
     justify-content: center;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
-    font-size: px2rem(20);
-    padding: px2rem(24) px2rem(48);
+    font-size: px2rem(16);
+    padding: px2rem(24) px2rem(32);
     text-decoration: none;
     border-radius: px2rem(8);
     border: 1px solid transparent;
     transition: all .125s ease-in-out;
     outline: none;
     cursor: pointer;
+
+    @media #{$breakpoint-sm-up} {
+        padding: px2rem(24) px2rem(48);
+        font-size: px2rem(20);
+    }
 
     &[disabled] {
         opacity: 0.5;
